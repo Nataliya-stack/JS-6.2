@@ -44,22 +44,17 @@ function result() {
         level = "Nivel Gurú";
         color = "#c0202f";    
     }
-
-        setTimeout(() => {
-        NIVEL_OUTPUT.style.display = "block";
-        NIVEL_OUTPUT.innerHTML = `
+     
+    NIVEL_OUTPUT.style.display = "block";    
+    NIVEL_OUTPUT.innerHTML = `
         <ul>
             <li><strong>Name:</strong> ${name}</li>
             <li><strong>Anos:</strong> ${anos} anos</li>
             <li style="color: ${color}; font-weight: bold;">Nivel de experiencia: ${level}</li>
         </ul>
     `;
-
+ 
     NAME.value = ""; 
-    ANOS.value = ""; 
-    
+    ANOS.value = "";     
     NAME.focus(); 
-
-        NIVEL_OUTPUT.style.opacity = "1";
-    }, 100);    
 }
